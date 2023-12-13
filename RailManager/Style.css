@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* Importation de la police Roboto depuis Google Fonts */
+
+body {
+    font-family: 'Roboto', sans-serif;  /*police roboto sur l'ensemble du site*/
+}
+
+header {
+    border: 3px black solid;
+    border-radius: 10px;
+    width: 50%;
+    height: 30px;
+    z-index: 2; 
+    position: absolute;
+    font-size: 22px;
+    margin-left: 25%;
+    margin-top: 15px;
+    background-color: white;
+    display: flex;
+}
+
+/****************************************************************************Info*/
+
+#infoSpace {
+    border: 3px black solid;
+    border-radius: 10px;
+    width: 50%;
+    height: 50px;
+    z-index: 2; 
+    position: absolute;
+    margin-left: 25%;
+    margin-top: 60px;
+    background-color: rgba(200, 0, 0, 0.7);
+    display: flex;
+}
+
+#infoContent {
+    margin: auto;
+    font-size: 18px;
+    text-align: center;
+}
+
+/****************************************************************************Shop*/
+
+/*bouton shop*/
+#shop {
+    border: 3px black solid;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    z-index: 1; 
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+#shopButton {
+    width: 100%;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: transparent;
+    background-image: url('image/shoppingImage.png');
+}
+/*contenu du shop*/
+#shopContent {
+    display: none;
+    border-left: solid gray 3px;
+    border-top: solid black 3px;
+    border-bottom: solid black 3px;
+    width: 23%;
+    background-color: white;
+    z-index: 2;
+    position: absolute;
+    height: 97vh;
+    top: 8px;
+    right: 0;
+    transition: 1s;
+}
+/*texte au dessus du menu shop*/
+#topBarShop{
+    display: block;
+    z-index: 3;
+    text-align: center;
+    margin-top: 12px;
+    font-size: 25px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid black;
+}
+/*Texte DAF shop*/
+#dafText {
+    font-size: 20px;
+
+}
+
+/*section fermant le shop*/
+#closeShop {
+    display: block;
+    z-index: 3;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    border: black solid 3px;
+    border-radius: 5px;
+}
+
+#closeButtonShop {
+    border: none;
+    background: none;
+    width: 20px;
+    height: 20px;
+    padding-left: 5px;
+}
+#closeButtonShop:hover {
+    cursor: pointer;
+}
+
+/****************************************************************************Truck*/
+
+#truck {
+    border: 3px black solid;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    z-index: 1; 
+    position: absolute;
+    right: 20px;
+    top: 90px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+#truckButton {
+    width: 100%;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+    background-color: transparent;
+    background-image: url('image/truck.png');
+}
+/*contenu du shop*/
+#truckContent {
+    display: none;
+    border-left: solid gray 3px;
+    border-top: solid black 3px;
+    border-bottom: solid black 3px;
+    width: 23%;
+    background-color: white;
+    z-index: 2;
+    position: absolute;
+    height: 97vh;
+    top: 8px;
+    right: 0;
+    transition: 1s;
+}
+
+/*texte au dessus du menu camions*/
+#topBarTruck{
+    display: block;
+    z-index: 3;
+    text-align: center;
+    margin-top: 12px;
+    font-size: 25px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid black;
+}
+
+/*section fermant le shop*/
+#closeTruck {
+    display: block;
+    z-index: 3;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    border: black solid 3px;
+    border-radius: 5px;
+}
+
+#closeButtonTruck {
+    border: none;
+    background: none;
+    width: 20px;
+    height: 20px;
+    padding-left: 5px;
+}
+#closeButtonTruck:hover {
+    cursor: pointer;
+}
+/****************************************************************************Carte*/
+
+#carte {
+    height: 97vh;
+    z-index: 0; /* tout en bas de la superposition*/
+    position: relative;
+    border: black solid 3px;
+    border-radius: 10px;
+}
+
+.leaflet-routing-container {
+    display: none;
+}
+
+/****************************************************************************Menu*/
+
+/*section sur le contenu du menu de gauche*/
+#menu {
+    display: none;
+    border-right: solid gray 3px;
+    border-top: solid black 3px;
+    border-bottom: solid black 3px;
+    width: 25%;
+    background-color: white;
+    z-index: 1;
+    position: absolute;
+    height: 97vh;
+    top: 8px;
+    left: 0;
+    transition: 1s;
+}
+
+/*Section ouvrant le menu*/
+#openMenu {
+    height: 100px;
+    width: 20px;
+    z-index: 1;
+    position: absolute;
+    left: 8px;
+    top: 40%;
+    background-color: white;
+    border: grey solid 3px;
+    border-left: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#openButtonMenu {
+    background: none;
+    border: none;
+    height: 100px;
+    width: 20px;
+    padding-left: 4px;
+}
+
+#openButtonMenu:hover {
+    cursor: pointer;
+}
+
+/*section fermant le menu*/
+#closeMenu {
+    display: none;
+    z-index: 2;
+    position: absolute;
+    top: 15px;
+    left: 333px;
+    border: black solid 3px;
+    border-radius: 5px;
+}
+
+#closeButtonMenu {
+    border: none;
+    background: none;
+    width: 20px;
+    height: 20px;
+    padding-left: 5px;
+}
+#closeButtonMenu:hover {
+    cursor: pointer;
+}
+
+/*****************************************************************************/

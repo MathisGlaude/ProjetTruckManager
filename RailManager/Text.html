@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Managers</title>
+
+    <!-- Fichier CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+    <link rel="stylesheet" href="Style.css" />
+
+
+</head>
+
+    <!----------------------------------------------------------------->
+
+<body>
+    <!--Barre d'information du haut de l'ecran-->
+    <header>
+        <div id="money">
+            
+        </div>
+        <div id="fuel">
+
+        </div>
+    </header>
+
+    <!--Espace ou sont affiché les informations-->
+    <article id="infoSpace">
+        <div id="infoContent">
+
+        </div>
+    </article>
+
+    <!----------------------------------------------------------------->
+    <!--Bouton shop-->
+    <article id="shop">
+        <button id="shopButton"></button>
+    </article>
+    <!--contenu du shop-->
+    <article id="shopContent">
+        <div id="closeShop">
+            <button id="closeButtonShop">
+                X
+            </button>
+        </div>
+        <div id="topBarShop">
+            Magasin de camions
+        </div>
+        <div id="dafShop">
+            <div id="dafTextShop">
+                DAF
+            </div>
+        </div>
+
+
+    </article>
+
+    <!----------------------------------------------------------------->
+    <!--Bouton camions-->
+    <article id="truck">
+        <button id="truckButton"></button>
+    </article>
+    <!--contenu du menu camions-->
+    <article id="truckContent">
+        <div id="closeTruck">
+            <button id="closeButtonTruck">
+                X
+            </button>
+        </div>
+        <div id="topBarTruck">
+            Vos camions
+        </div>
+    </article>
+
+    <!----------------------------------------------------------------->
+
+    <!--Affichage de la carte-->
+    <article>
+        <div id="carte"></div>
+    </article>
+
+    <!----------------------------------------------------------------->    
+
+    <!--Contenu du menu de gauche-->
+    <aside id="menu">  
+        <div id="closeMenu">
+            <button id="closeButtonMenu">
+                X
+            </button>
+        </div>
+
+
+    </aside>
+
+    <!--ouverture / fermeture du menu de gauche-->
+    <div id="openMenu">
+        <button id="openButtonMenu">
+            M
+            E
+            N
+            U
+        </button>
+    </div>
+
+    <!----------------------------------------------------------------->
+
+    <!-- Fichier JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+    <script src="Script.js"></script>
+</body>
+</html>
